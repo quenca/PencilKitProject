@@ -10,13 +10,15 @@
 		30039C602493ED3900320255 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30039C5F2493ED3900320255 /* AppDelegate.swift */; };
 		30039C622493ED3900320255 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30039C612493ED3900320255 /* SceneDelegate.swift */; };
 		30039C652493ED3900320255 /* PencilKitProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 30039C632493ED3900320255 /* PencilKitProject.xcdatamodeld */; };
-		30039C672493ED3900320255 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30039C662493ED3900320255 /* ContentView.swift */; };
 		30039C692493ED3B00320255 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30039C682493ED3B00320255 /* Assets.xcassets */; };
 		30039C6C2493ED3B00320255 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30039C6B2493ED3B00320255 /* Preview Assets.xcassets */; };
 		30039C6F2493ED3C00320255 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30039C6D2493ED3C00320255 /* LaunchScreen.storyboard */; };
 		30039C7A2493ED3C00320255 /* PencilKitProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30039C792493ED3C00320255 /* PencilKitProjectTests.swift */; };
 		30039C852493ED3C00320255 /* PencilKitProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30039C842493ED3C00320255 /* PencilKitProjectUITests.swift */; };
 		30039C942493EE2600320255 /* UIImage+CGRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30039C932493EE2600320255 /* UIImage+CGRect.swift */; };
+		30039C972493EE8C00320255 /* PencilKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30039C962493EE8C00320255 /* PencilKitViewController.swift */; };
+		30039C992493EEA800320255 /* MNIST.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 30039C982493EEA800320255 /* MNIST.mlmodel */; };
+		30039C9B2493EEBF00320255 /* PagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30039C9A2493EEBF00320255 /* PagesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +43,6 @@
 		30039C5F2493ED3900320255 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		30039C612493ED3900320255 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		30039C642493ED3900320255 /* PencilKitProject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PencilKitProject.xcdatamodel; sourceTree = "<group>"; };
-		30039C662493ED3900320255 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		30039C682493ED3B00320255 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		30039C6B2493ED3B00320255 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		30039C6E2493ED3C00320255 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -53,6 +54,9 @@
 		30039C842493ED3C00320255 /* PencilKitProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PencilKitProjectUITests.swift; sourceTree = "<group>"; };
 		30039C862493ED3C00320255 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30039C932493EE2600320255 /* UIImage+CGRect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+CGRect.swift"; sourceTree = "<group>"; };
+		30039C962493EE8C00320255 /* PencilKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PencilKitViewController.swift; sourceTree = "<group>"; };
+		30039C982493EEA800320255 /* MNIST.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MNIST.mlmodel; sourceTree = "<group>"; };
+		30039C9A2493EEBF00320255 /* PagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,10 +107,11 @@
 		30039C5E2493ED3900320255 /* PencilKitProject */ = {
 			isa = PBXGroup;
 			children = (
+				30039C952493EE7700320255 /* Controllers */,
 				30039C922493EDE800320255 /* Extensions */,
 				30039C5F2493ED3900320255 /* AppDelegate.swift */,
 				30039C612493ED3900320255 /* SceneDelegate.swift */,
-				30039C662493ED3900320255 /* ContentView.swift */,
+				30039C982493EEA800320255 /* MNIST.mlmodel */,
 				30039C682493ED3B00320255 /* Assets.xcassets */,
 				30039C6D2493ED3C00320255 /* LaunchScreen.storyboard */,
 				30039C702493ED3C00320255 /* Info.plist */,
@@ -148,6 +153,15 @@
 				30039C932493EE2600320255 /* UIImage+CGRect.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		30039C952493EE7700320255 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				30039C962493EE8C00320255 /* PencilKitViewController.swift */,
+				30039C9A2493EEBF00320255 /* PagesViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,8 +297,10 @@
 			files = (
 				30039C602493ED3900320255 /* AppDelegate.swift in Sources */,
 				30039C622493ED3900320255 /* SceneDelegate.swift in Sources */,
-				30039C672493ED3900320255 /* ContentView.swift in Sources */,
+				30039C9B2493EEBF00320255 /* PagesViewController.swift in Sources */,
 				30039C942493EE2600320255 /* UIImage+CGRect.swift in Sources */,
+				30039C972493EE8C00320255 /* PencilKitViewController.swift in Sources */,
+				30039C992493EEA800320255 /* MNIST.mlmodel in Sources */,
 				30039C652493ED3900320255 /* PencilKitProject.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
