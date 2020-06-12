@@ -9,19 +9,10 @@
 import UIKit
 
 class PagesViewController: UIPageViewController {
-    var controllers = [UIViewController]()
+    private var controllers = [UIViewController]()
     
     init(viewControllers: [UIViewController] = []) {
         super.init(transitionStyle: .pageCurl, navigationOrientation: .horizontal, options: nil)
-    }
-    
-    func setControllers() {
-        
-        for _ in 1...5 {
-            let vc = PencilKitViewController()
-            vc.view.backgroundColor = randomColor()
-            controllers.append(vc)
-        }
     }
     
     required init?(coder: NSCoder) {
@@ -37,6 +28,15 @@ class PagesViewController: UIPageViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+    }
+    
+    func setControllers() {
+        
+        for _ in 1...5 {
+            let vc = PencilKitViewController()
+            vc.view.backgroundColor = randomColor()
+            controllers.append(vc)
+        }
     }
     
     func randomCGFloat() -> CGFloat {
