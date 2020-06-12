@@ -16,6 +16,7 @@
 		30039C6F2493ED3C00320255 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30039C6D2493ED3C00320255 /* LaunchScreen.storyboard */; };
 		30039C7A2493ED3C00320255 /* PencilKitProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30039C792493ED3C00320255 /* PencilKitProjectTests.swift */; };
 		30039C852493ED3C00320255 /* PencilKitProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30039C842493ED3C00320255 /* PencilKitProjectUITests.swift */; };
+		30039C942493EE2600320255 /* UIImage+CGRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30039C932493EE2600320255 /* UIImage+CGRect.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		30039C802493ED3C00320255 /* PencilKitProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PencilKitProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		30039C842493ED3C00320255 /* PencilKitProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PencilKitProjectUITests.swift; sourceTree = "<group>"; };
 		30039C862493ED3C00320255 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30039C932493EE2600320255 /* UIImage+CGRect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+CGRect.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 		30039C5E2493ED3900320255 /* PencilKitProject */ = {
 			isa = PBXGroup;
 			children = (
+				30039C922493EDE800320255 /* Extensions */,
 				30039C5F2493ED3900320255 /* AppDelegate.swift */,
 				30039C612493ED3900320255 /* SceneDelegate.swift */,
 				30039C662493ED3900320255 /* ContentView.swift */,
@@ -137,6 +140,14 @@
 				30039C862493ED3C00320255 /* Info.plist */,
 			);
 			path = PencilKitProjectUITests;
+			sourceTree = "<group>";
+		};
+		30039C922493EDE800320255 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				30039C932493EE2600320255 /* UIImage+CGRect.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,6 +284,7 @@
 				30039C602493ED3900320255 /* AppDelegate.swift in Sources */,
 				30039C622493ED3900320255 /* SceneDelegate.swift in Sources */,
 				30039C672493ED3900320255 /* ContentView.swift in Sources */,
+				30039C942493EE2600320255 /* UIImage+CGRect.swift in Sources */,
 				30039C652493ED3900320255 /* PencilKitProject.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
