@@ -31,10 +31,10 @@ class PagesViewController: UIPageViewController {
     }
     
     func setControllers() {
-        
+        self.isPagingEnabled = false
         for _ in 1...5 {
             let vc = PencilKitViewController()
-            vc.view.backgroundColor = randomColor()
+            vc.view.backgroundColor = .white
             controllers.append(vc)
         }
     }
@@ -75,3 +75,23 @@ extension PagesViewController: UIPageViewControllerDataSource {
     }
 }
 
+extension UIPageViewController {
+    var isPagingEnabled: Bool {
+        get {
+            var isEnabled: Bool = true
+            for view in view.subviews {
+                if let subView = view as? UIScrollView {
+                    isEnabled = subView.isScrollEnabled
+                }
+            }
+            return isEnabled
+        }
+        set {
+            for view in view.subviews {
+                if let subView = view as? UIScrollView {
+                    subView.isScrollEnabled = newValue
+                }
+            }
+        }
+    }
+}

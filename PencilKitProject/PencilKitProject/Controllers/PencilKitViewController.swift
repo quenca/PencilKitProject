@@ -58,6 +58,20 @@ final class PencilKitViewController: UIViewController, CodeView {
         return label
     }()
     
+    lazy var dateLabel: UILabel = {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = .medium
+        dateFormatter.timeStyle = .none
+        let date = Date()
+        dateFormatter.locale = Locale(identifier: "pt_BR")
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.text = dateFormatter.string(from: date)
+        label.textAlignment = .left
+        label.textColor = .white
+        return label
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupView()
@@ -79,6 +93,7 @@ final class PencilKitViewController: UIViewController, CodeView {
         view.addSubview(saveButton)
         view.addSubview(predictedLabel)
         view.addSubview(detectButton)
+        view.addSubview(dateLabel)
     }
     
     func setupConstraints() {
@@ -106,6 +121,14 @@ final class PencilKitViewController: UIViewController, CodeView {
             predictedLabel.widthAnchor.constraint(equalToConstant: 100),
             predictedLabel.heightAnchor.constraint(equalToConstant: 50),
         ])
+        
+        NSLayoutConstraint.activate([
+            dateLabel.topAnchor.constraint(equalTo: view.topAnchor,constant: 40),
+            dateLabel.leadingAnchor.constraint(equalTo: predictedLabel.trailingAnchor, constant: 20),
+            dateLabel.widthAnchor.constraint(equalToConstant: 150),
+            dateLabel.heightAnchor.constraint(equalToConstant: 50),
+        ])
+        
         NSLayoutConstraint.activate([
             detectButton.topAnchor.constraint(equalTo: view.topAnchor,constant: 40),
             detectButton.trailingAnchor.constraint(equalTo: saveButton.leadingAnchor, constant: 20),

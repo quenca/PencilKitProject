@@ -20,6 +20,8 @@
 		30039C992493EEA800320255 /* MNIST.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 30039C982493EEA800320255 /* MNIST.mlmodel */; };
 		30039C9B2493EEBF00320255 /* PagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30039C9A2493EEBF00320255 /* PagesViewController.swift */; };
 		30039C9D2493F63A00320255 /* CodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30039C9C2493F63A00320255 /* CodeView.swift */; };
+		30039CA4249A89ED00320255 /* UIPageViewControllerDataSourceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30039CA3249A89ED00320255 /* UIPageViewControllerDataSourceMock.swift */; };
+		30039CA6249A8C1E00320255 /* PagesViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30039CA5249A8C1E00320255 /* PagesViewControllerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,8 @@
 		30039C982493EEA800320255 /* MNIST.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MNIST.mlmodel; sourceTree = "<group>"; };
 		30039C9A2493EEBF00320255 /* PagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagesViewController.swift; sourceTree = "<group>"; };
 		30039C9C2493F63A00320255 /* CodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeView.swift; sourceTree = "<group>"; };
+		30039CA3249A89ED00320255 /* UIPageViewControllerDataSourceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPageViewControllerDataSourceMock.swift; sourceTree = "<group>"; };
+		30039CA5249A8C1E00320255 /* PagesViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagesViewControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +139,8 @@
 			isa = PBXGroup;
 			children = (
 				30039C792493ED3C00320255 /* PencilKitProjectTests.swift */,
+				30039CA5249A8C1E00320255 /* PagesViewControllerTests.swift */,
+				30039CA3249A89ED00320255 /* UIPageViewControllerDataSourceMock.swift */,
 				30039C7B2493ED3C00320255 /* Info.plist */,
 			);
 			path = PencilKitProjectTests;
@@ -313,6 +319,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30039CA4249A89ED00320255 /* UIPageViewControllerDataSourceMock.swift in Sources */,
+				30039CA6249A8C1E00320255 /* PagesViewControllerTests.swift in Sources */,
 				30039C7A2493ED3C00320255 /* PencilKitProjectTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
